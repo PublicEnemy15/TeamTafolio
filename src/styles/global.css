@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+
+    --color-prueba: #4C60E6;
+
+    --color-rojo: #BE3455;
+
+    --font-drive: "Drive", sans-serif;
+
+    --font-london: "London 20", sans-serif;
+
+    --font-sequential: "Sequential", sans-serif;
+
+    --font-krafting: "Soehne Kraftig", sans-serif;
+
+    --default-font: "Soehne Buch", sans-serif;
+}
+
+@font-face {
+    font-family: Soehne Buch;
+    src: url(src/assets/fonts/soehne-buch.b8298601.woff2) format("woff2");
+    font-display: swap;
+    font-size: .813rem;
+}
+
+@font-face {
+    font-family: Soehne Kraftig;
+    src: url(src/assets/fonts/soehne-kraftig.1ec4239e.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: Sequential;
+    src: url(src/assets/fonts/Sequel100Black-65.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: Drive;
+    src: url(src/assets/fonts/DriveMono-Regular.woff2) format("woff2");
+    font-display: swap
+}
+
+@font-face {
+    font-family: London\ 20;
+    src: url(src/assets/fonts/london-20.23f23d9c.otf) format("opentype");
+    font-display: swap
+}
+
+.font-mono {
+    font-family: JetBrains Mono,Consolas,Monaco,Courier New,monospace;
+}
+
+body {
+  font-family: var(--default-font);
+}
+
+.text-xs {
+    font-size: .625rem;
+}
+
+.text-2xs {
+    font-size: .6rem;
+}
+
+@media (min-width: 640px) {
+    .sm\:text-2xs {
+        font-size: .6rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:text-xs {
+        font-size: .625rem;
+    }
+}
+
+.Krafting-Size {
+    font-size: .813rem;
+}
+
+.font-mono-bold {
+    font-variation-settings: "wght" 700;
+}
+
+.font-mono {
+    font-variation-settings: "wght" 400;
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 640px) {
+    .sm\:text-md {
+        font-size: .875rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lg\:grid {
+        display: grid
+;
+    }
+}

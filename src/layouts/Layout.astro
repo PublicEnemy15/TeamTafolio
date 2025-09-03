@@ -1,3 +1,9 @@
+---
+import '../styles/global.css' 
+import Header from '@/components/Header.astro';
+import Body from '@/components/Body.astro';
+import Footer from '@/components/Footer.astro';
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +11,14 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+		</style>
 		<title>Astro Basics</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

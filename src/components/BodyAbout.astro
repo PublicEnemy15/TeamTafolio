@@ -1,0 +1,110 @@
+---
+import { Image } from 'astro:assets';
+import rataImage from '../assets/imagenes/rata.webp';
+---
+
+<main class="p-4 w-full">
+  <div class="font-mono font-thin flex items-center justify-center">
+    <h1>***</h1>
+  </div>
+
+  <section class="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4">
+    <!-- Card de Luis The Rat -->
+    <fieldset class="relative bg-white border border-black p-6 sm:mb-5 w-full h-full">
+      <legend class="font-mono sm:text-xs text-[0.5rem] font-thin">Luis The rat</legend>
+      
+      <div class="flex items-center justify-center mb-12">
+        <div class="text-[0.4rem] sm:text-xs">
+          <Image 
+            src={rataImage}
+            alt="Luis The Rat - Mascota del equipo"
+            width={850}
+            height={1200}
+            class="max-w-full h-auto"
+            loading="lazy"
+            format="webp"
+            quality={80}
+          />
+        </div>
+      </div>
+      
+      <!-- Footer con fecha y letras -->
+      <div class="font-mono text-xs">
+        <time class="absolute right-2 bottom-2 flex flex-col items-end justify-center">
+          <p class="font-bold">9/2/2025</p>
+        </time>
+        
+        <div class="font-sans absolute flex left-4 bottom-2 gap-1" role="img" aria-label="Luis The Rat">
+          <!-- LUIS -->
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#73A7DD] text-white text-xs">L</div>
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#D868A0] text-white text-xs">U</div>
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#73A7DD] text-white text-xs">I</div>
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#D868A0] text-white text-xs mr-2">S</div>
+          
+          <!-- THE -->
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#73A7DD] text-white text-xs">T</div>
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#D868A0] text-white text-xs">H</div>
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#73A7DD] text-white text-xs mr-2">E</div>
+          
+          <!-- RAT -->
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#73A7DD] text-white text-xs">R</div>
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#D868A0] text-white text-xs">A</div>
+          <div class="flex justify-center rounded-full items-center font-bold w-4 h-4 bg-[#73A7DD] text-white text-xs">T</div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Información del equipo -->
+    <div class="w-full h-full">
+      <article class="w-full h-full font-mono text-xs">
+        <fieldset class="border border-black p-2 w-full h-full">
+          <legend>Quiénes somos</legend>
+          
+          <main class="sm:w-[65ch]">
+            <!-- Nombres -->
+            <section>
+              <h2 class="uppercase mt-1 font-bold">Nombres</h2>
+              <ul class="mt-5 space-y-5">
+                <li class="pl-5">Luis Francisco Delgado Palomino - atrasador</li>
+                <li class="pl-5">Daren Gabriel Flores Barba - kesito</li>
+                <li class="pl-5">Yefferson Adrian Farfan Mallqui - burrito</li>
+                <li class="pl-5">Polux Fabryzio Morales Soto - cerebron</li>
+                <li class="pl-5">Gian Franco Siesquen Santamaria - no lo voy a firmar</li>
+                <li class="pl-5">Eytan Elias Vidal Figueroa - 4</li>
+              </ul>
+            </section>
+
+            <!-- Universidad -->
+            <section>
+              <h2 class="uppercase mt-10 font-bold">Universidad</h2>
+              <p class="mt-5 pl-5">Universidad Tecnológica del Perú</p>
+              <div class="font-sans flex mt-5 pl-5" role="img" aria-label="UTP">
+                <div class="flex justify-center items-center font-bold w-4 h-4 bg-[#BE3455] text-white text-xs">U</div>
+                <div class="flex justify-center items-center font-bold w-4 h-4 bg-black text-white text-xs">T</div>
+                <div class="flex justify-center items-center font-bold w-4 h-4 bg-[#BE3455] text-white text-xs">P</div>
+              </div>
+            </section>
+
+            <!-- Docente -->
+            <section>
+              <h2 class="uppercase mt-10 font-bold">Docente</h2>
+              <p class="mt-5 pl-5">José Antonio Espinal Tevez</p>
+            </section>
+
+            <!-- Descripción -->
+            <section>
+              <h2 class="uppercase mt-10 font-bold">Descripción</h2>
+              <div class="flex flex-col gap-2 mt-5 pl-5 space-y-5">
+                <p>Somos un grupo de amigos que se unieron para aprender y crecer juntos en este mundillo.</p>
+                <p>Realmente nadie en particular aprendió de la nada, solo vemos mucho 
+                  <a class="text-red-600 hover:text-red-800 transition-colors" href="https://www.youtube.com/midudev"  target="_blank" rel="noopener noreferrer"> YouTube </a>.
+                </p>
+                <p>Agradecer a cada persona que nos ha apoyado en este camino y a quienes ofrecen tutoriales gratuitos en YouTube, sobre todo soy cpp de Midudev.</p>
+              </div>
+            </section>
+          </main>
+        </fieldset>
+      </article>
+    </div>
+  </section>
+</main>
